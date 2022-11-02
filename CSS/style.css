@@ -1,0 +1,273 @@
+/* MULTIMEDIA */
+
+body {
+    background-image: linear-gradient(to left, #0b090a, #111d13);
+}
+
+.carousel {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.newsImages {
+    display: flex;
+    margin: auto;
+    width: 100%;
+}
+
+.usImage {
+    width: 100%;
+    grid-area: usImage;
+}
+
+.productsImages {
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.socialMedia {
+    width: 100px;
+}
+
+
+/* TITLES AND TEXT */
+
+.mrC {
+    text-transform: uppercase;
+    font-family: calibri;
+    font-size: 35px;
+    color: black;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titlesNav {
+    text-transform: uppercase;
+    font-family: cambria;
+    font-size: 30px;
+    color: black;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.titlesNav:hover {
+    font-size: 31px;
+    color: rgb(230, 221, 148);
+    transition: all 0.5s;
+}
+
+.mainTitles {
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(230, 221, 148);
+    font-size: 40px;
+    font-family: cambria;
+    letter-spacing: 5px;
+    padding-top: 100px;
+    animation-name: mainTitles;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.homeTitle {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-family: cambria;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(230, 221, 148);
+    animation-name: homeTitle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+
+.newsTitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: cambria;
+    color: rgb(189, 152, 107);
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    animation-name: newsTitle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.titles {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: cambria;
+    color: #b38a58;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    grid-area: titles;
+    animation-name: titles;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.contactText {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: cambria;
+    color: #b38a58;
+    font-size: 40px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+}
+
+.faqTitles {
+    text-transform: uppercase;
+    text-align: left;
+    font-family: cambria;
+    color: rgb(148, 122, 52);
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+.newSubtitles {
+    color: rgb(27, 34, 29);
+    font-family: calibri bold;
+    font-size: 25px;
+    display: flex;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+}
+
+.productTitle {
+    display: flex;
+    color: rgb(211, 218, 175);
+    font-family: calibri;
+    font-size: 25px;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    margin: auto;
+}
+
+.text {
+    color: whitesmoke;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify center;
+}
+
+.textUs {
+    color: whitesmoke;
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    grid-area: textUs;
+}
+
+.faqText {
+    color: rgb(52, 83, 61);
+    font-family: calibri;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(185, 152, 41);
+    font-weight: bold;
+}
+
+.footerBackground {
+    color: rgb(62, 94, 33);
+    background-color: #ffffff;
+    font-family: calibri bold;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: left;
+    height: auto;
+    width: auto;
+}
+
+
+/* CONTACT */
+
+.contact {
+    margin: 0;
+    padding: 0;
+}
+
+.labelMessage {
+    padding-bottom: 300px;
+    padding-left: 400px;
+}
+
+
+/*GRID*/
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0px 0px;
+    grid-template-areas: "titles titles" "usImage textUs";
+}
+
+
+/*ANIMATION*/
+
+@keyframes newsTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes homeTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes mainTitles {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes titles {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
