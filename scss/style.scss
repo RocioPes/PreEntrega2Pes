@@ -5,6 +5,12 @@
 @import "footer";
 @import "contact";
 
+@mixin text-mod {
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
 body {
     background-image: linear-gradient(to left, #0b090a, #111d13);
 }
@@ -41,17 +47,18 @@ a {
 }
 
 
+
 /*titles*/
 
 .homeTitle{
+    @include text-mod();
     padding-top: 80px;
     padding-bottom: 50px;
     font-size: $font-size + 20px;
     font-family: $family-font;
     color: $title-color;
     letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: center;
+    
     animation-name: homeTitle;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -61,8 +68,7 @@ a {
         
     
  .title {
-        text-transform: uppercase;
-        text-align: center;
+        @include text-mod();
         font-family: $family-font;
         color: $title-color;
         font-size: $font-size +15px;
@@ -83,8 +89,7 @@ a {
         font-family: $second-font-family;
         font-weight: bold;
         font-size: $font-size;
-        text-align: center;
-        text-transform: uppercase;
+        @include text-mod();
        
                
     }
