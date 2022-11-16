@@ -51,11 +51,19 @@ footer .socialMedia {
   text-transform: initial;
 }
 
+.button {
+  font-weight: bold;
+  background-color: #b38a58;
+  font-size: 30px -10px;
+}
+
 body {
   background-image: linear-gradient(to left, #0b090a, #111d13);
 }
 
-.carousel-inner {
+.carousel {
+  display: flex;
+  width: 100%;
   justify-content: center;
 }
 
@@ -75,6 +83,7 @@ a {
   text-decoration: none;
   color: rgb(185, 152, 41);
   font-weight: bold;
+  text-transform: none;
 }
 
 /*titles*/
