@@ -2,7 +2,7 @@
 header nav {
   background-color: aliceblue;
 }
-header nav .mrC {
+header nav .mrC, header nav li .titlesNav {
   text-decoration: none;
   text-transform: uppercase;
   padding-right: 10px;
@@ -14,16 +14,6 @@ header nav .mrC {
 }
 header nav li {
   display: inline-block;
-}
-header nav li .titlesNav {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: cambria;
-  font-size: 30px;
-  color: black;
-  font-weight: bold;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 header nav li .titlesNav:hover {
   font-size: 31px;
@@ -46,13 +36,27 @@ footer .socialMedia {
   width: 100px;
 }
 
+.contactText, .contactText .form-control {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: cambria;
+  color: #b38a58;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-decoration: underline;
+  text-decoration: none;
+}
+.contactText .form-control {
+  font-size: 25px;
+  text-transform: initial;
+}
+
 body {
   background-image: linear-gradient(to left, #0b090a, #111d13);
 }
 
-.carousel {
-  margin: auto;
-  padding-bottom: 50px;
+.carousel-inner {
+  justify-content: center;
 }
 
 .video {
@@ -65,6 +69,12 @@ body {
 .img {
   width: 100%;
   margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(185, 152, 41);
+  font-weight: bold;
 }
 
 /*titles*/
@@ -95,8 +105,8 @@ body {
   font-size: 45px;
   letter-spacing: 5px;
   text-decoration: underline;
-  -webkit-animation-name: newsTitle;
-          animation-name: newsTitle;
+  -webkit-animation-name: title;
+          animation-name: title;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
@@ -116,7 +126,7 @@ body {
   text-transform: uppercase;
 }
 
-/*text*/
+/*ABOUT US*/
 .textUs {
   color: whitesmoke;
   font-family: calibri;
@@ -125,7 +135,8 @@ body {
   text-align: center;
 }
 
-.productCards .card-body .productTitle {
+/*CARDS IN PRODUCTS*/
+.productCards .card-body .productTitle, .productCards .card-body .productText {
   display: flex;
   color: rgb(88, 102, 11);
   font-family: calibri;
@@ -138,17 +149,11 @@ body {
   margin-bottom: 10px;
 }
 .productCards .card-body .productText {
-  display: flex;
   color: rgb(23, 24, 19);
-  font-weight: bold;
-  font-family: calibri;
   font-size: 25px;
-  text-align: center;
-  justify-content: center;
-  letter-spacing: 3px;
-  margin: auto;
 }
 .productCards .card-footer .productPrice {
+  font-size: 25px;
   display: flex;
   color: rgb(88, 102, 11);
   font-family: calibri;
@@ -178,22 +183,6 @@ body {
 }
 
 /*ANIMATION*/
-@-webkit-keyframes newsTitle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-@keyframes newsTitle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
 @-webkit-keyframes homeTitle {
   0% {
     opacity: 0;
@@ -210,7 +199,7 @@ body {
     opacity: 100%;
   }
 }
-@-webkit-keyframes mainTitles {
+@-webkit-keyframes title {
   0% {
     opacity: 0;
   }
@@ -218,7 +207,7 @@ body {
     opacity: 100%;
   }
 }
-@keyframes mainTitles {
+@keyframes title {
   0% {
     opacity: 0;
   }

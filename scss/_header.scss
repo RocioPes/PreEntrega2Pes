@@ -2,8 +2,6 @@ header{
     nav{
         background-color: aliceblue;
 
-       
-
         .mrC{ 
             text-decoration: none;
             text-transform: uppercase;
@@ -12,30 +10,20 @@ header{
             font-weight: bold;
             font-family: $family-font;
             font-size: $font-size;
-           color: $nav-color
+           color: $nav-color;
             
-
         }
         
         li{
             display: inline-block;
-            .titlesNav{ 
-               text-decoration: none;
-                text-transform: uppercase;
-                font-family: $family-font;
-               font-size: $font-size;
-               color: $nav-color;
-               font-weight: bold;
-                padding-left: 10px;
-               padding-right: 10px;
-
+        .titlesNav{ 
+            @extend .mrC;
+               
                &:hover { 
                 font-size: 31px;
                 color: rgb(230, 221, 148);
                 transition: all 0.5s;
-             
-
-                        
+        
                              
                }
            
