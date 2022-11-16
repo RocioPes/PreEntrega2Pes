@@ -1,0 +1,194 @@
+@import "vars";
+@import "header";
+@import "footer";
+
+
+
+body {
+    background-image: linear-gradient(to left, #0b090a, #111d13);
+}
+
+.carousel {
+    margin: auto;
+    padding-bottom: $padding + 20px;
+}
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: $padding;
+}
+
+.img {
+    
+    width: 100%;
+    margin: auto;
+   
+}
+
+a {
+    text-decoration: none;
+    color: rgb(185, 152, 41);
+    font-weight: bold;
+}
+
+
+/*titles*/
+
+.homeTitle{
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-size: $font-size + 20px;
+    font-family: $family-font;
+    color: $title-color;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    animation-name: homeTitle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+
+}
+        
+    
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $family-font;
+    color: $title-color;
+    font-size: $font-size +15px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    animation-name: newsTitle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    padding-top: $padding +30px;
+    padding-bottom: $padding;
+
+    }
+
+    .newSubtitles {
+        color: rgb(38, 49, 41);
+        font-family: $second-font-family;
+        font-weight: bold;
+        font-size: $font-size;
+        text-align: center;
+        text-transform: uppercase;
+               
+    }
+
+ /*text*/
+
+.textUs {
+    color: whitesmoke;
+    font-family: $second-font-family;
+    font-weight: bold;
+    font-size: $font-size;
+    text-align: center;
+    
+}
+
+.productCards{
+    .card-body{
+        .productTitle {
+            display: flex;
+            color: rgb(88, 102, 11);
+            font-family: $second-font-family;
+            font-size: $font-size;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 3px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        
+        .productText {
+            display: flex;
+            color: rgb(23, 24, 19);
+            font-weight: bold;
+            font-family: $second-font-family;
+            font-size: 25px;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 3px;
+            margin: auto;
+        }
+        
+       }
+       .card-footer{
+        .productPrice {
+            display: flex;
+            color: rgb(88, 102, 11);
+            font-family: $second-font-family;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            justify-content: center;
+            letter-spacing: 3px;
+            margin: auto;
+        }
+    }
+    
+
+}
+
+/*accordion in FAQ*/
+
+.accordion{
+      
+    
+    .faqTitles {
+        text-transform: uppercase;
+        text-align: left;
+        font-family: $family-font;
+        font-weight: bold;
+        color: rgb(148, 122, 52);
+        font-size: $font-size;
+        padding-top: $padding +20px;
+    }
+    
+    .faqText {
+        color: rgb(52, 83, 61);
+        font-family: $family-font;
+        font-size: $font-size;
+        text-align: justify center;
+       
+  }
+    
+}
+
+/*ANIMATION*/
+
+@keyframes newsTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes homeTitle {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes mainTitles {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+

@@ -1,0 +1,47 @@
+header{
+    nav{
+        background-color: aliceblue;
+
+       
+
+        .mrC{ 
+            text-decoration: none;
+            text-transform: uppercase;
+            padding-right: 10px;
+            padding-left: 10px;
+            font-weight: bold;
+            font-family: $family-font;
+            font-size: $font-size;
+           color: $nav-color
+            
+
+        }
+        
+        li{
+            display: inline-block;
+            .titlesNav{ 
+               text-decoration: none;
+                text-transform: uppercase;
+                font-family: $family-font;
+               font-size: $font-size;
+               color: $nav-color;
+               font-weight: bold;
+                padding-left: 10px;
+               padding-right: 10px;
+
+               &:hover { 
+                font-size: 31px;
+                color: rgb(230, 221, 148);
+                transition: all 0.5s;
+             
+
+                        
+                             
+               }
+           
+            }
+        }
+
+        
+    }
+}
