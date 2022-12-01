@@ -15,6 +15,9 @@ header nav .mrC, header nav li .titlesNav {
 header nav li {
   display: inline-block;
 }
+header nav li .titlesNav {
+  text-transform: initial;
+}
 header nav li .titlesNav:hover {
   font-size: 31px;
   color: rgb(230, 221, 148);
@@ -26,7 +29,7 @@ footer {
   height: auto;
   width: auto;
   color: rgb(62, 94, 33);
-  font-family: calibri;
+  font-family: cambria;
   font-weight: bold;
   font-size: 20px;
   font-family: cursive;
@@ -63,7 +66,7 @@ body {
 
 .carousel {
   display: flex;
-  width: 100%;
+  width: 80%;
   justify-content: center;
 }
 
@@ -77,6 +80,7 @@ body {
 .img {
   width: 100%;
   margin: auto;
+  height: 100%;
 }
 
 a {
@@ -84,6 +88,13 @@ a {
   color: rgb(185, 152, 41);
   font-weight: bold;
   text-transform: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 500px;
 }
 
 /*titles*/
@@ -124,11 +135,12 @@ a {
           animation-delay: 4s;
   padding-top: 60px;
   padding-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .newSubtitles {
   color: rgb(38, 49, 41);
-  font-family: calibri;
+  font-family: cambria;
   font-weight: bold;
   font-size: 30px;
   text-transform: uppercase;
@@ -138,7 +150,7 @@ a {
 /*ABOUT US*/
 .textUs {
   color: whitesmoke;
-  font-family: calibri;
+  font-family: cambria;
   font-weight: bold;
   font-size: 30px;
   text-align: center;
@@ -148,7 +160,7 @@ a {
 .productCards .card-body .productTitle, .productCards .card-body .productText {
   display: flex;
   color: rgb(88, 102, 11);
-  font-family: calibri;
+  font-family: cambria;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
@@ -165,7 +177,7 @@ a {
   font-size: 25px;
   display: flex;
   color: rgb(88, 102, 11);
-  font-family: calibri;
+  font-family: cambria;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -176,7 +188,6 @@ a {
 
 /*accordion in FAQ*/
 .accordion .faqTitles {
-  text-transform: uppercase;
   text-align: left;
   font-family: cambria;
   font-weight: bold;

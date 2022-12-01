@@ -17,12 +17,15 @@ header{
         li{
             display: inline-block;
         .titlesNav{ 
+            text-transform:initial;
             @extend .mrC;
                
                &:hover { 
                 font-size: 31px;
                 color: rgb(230, 221, 148);
                 transition: all 0.5s;
+                
+                
         
                              
                }

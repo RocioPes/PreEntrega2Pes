@@ -17,7 +17,7 @@ body {
 
 .carousel{
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: center;
     
     
@@ -36,6 +36,7 @@ body {
     
     width: 100%;
     margin: auto;
+    height: 100%;
      
 }
 
@@ -46,7 +47,18 @@ a {
     text-transform: none;
 }
 
+.card{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 500px;
+    
 
+
+    
+
+
+}
 
 /*titles*/
 
@@ -80,15 +92,17 @@ a {
         animation-delay: 4s;
         padding-top: $padding +30px;
         padding-bottom: $padding;
+        text-transform:capitalize;
     
         }
 
 .newSubtitles {
 
         color: rgb(38, 49, 41);
-        font-family: $second-font-family;
+        font-family: $family-font;
         font-weight: bold;
         font-size: $font-size;
+        
         @include text-mod();
        
                
@@ -100,7 +114,7 @@ a {
 .textUs {
     
 color: whitesmoke;
-font-family: $second-font-family;
+font-family: $family-font;
 font-weight: bold;
 font-size: $font-size;
 text-align: center;
@@ -115,7 +129,7 @@ text-align: center;
         .productTitle {
             display: flex;
             color: rgb(88, 102, 11);
-            font-family: $second-font-family;
+            font-family: $family-font;
             font-size: $font-size;
             font-weight: bold;
             text-align: center;
@@ -139,13 +153,15 @@ text-align: center;
         font-size: 25px;
         display: flex;
             color: rgb(88, 102, 11);
-            font-family: $second-font-family;
+            font-family: $family-font;
             font-size: 25px;
             font-weight: bold;
             text-align: center;
             justify-content: center;
             letter-spacing: 3px;
             margin: auto;
+            
+            
 
           
         } }
@@ -161,7 +177,7 @@ text-align: center;
       
     
     .faqTitles {
-        text-transform: uppercase;
+        
         text-align: left;
         font-family: $family-font;
         font-weight: bold;
@@ -200,6 +216,6 @@ text-align: center;
     100% {
         opacity: 100%;
     }
-}
 
+}
 
