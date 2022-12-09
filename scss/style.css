@@ -1,6 +1,6 @@
 /*VARS*/
 header nav {
-  background-color: aliceblue;
+  background-color: #ecf39e;
 }
 header nav .mrC, header nav li .titlesNav {
   text-decoration: none;
@@ -24,8 +24,22 @@ header nav li .titlesNav:hover {
   transition: all 0.5s;
 }
 
+.cart {
+  width: 30px;
+  height: 40px;
+  display: flex;
+  justify-content: right;
+  color: black;
+}
+.cart:hover {
+  color: rgb(189, 180, 118);
+  transition: all 0.7s;
+  width: 33px;
+  height: 43px;
+}
+
 footer {
-  background-color: #ffffff;
+  background-color: #ecf39e;
   height: auto;
   width: auto;
   color: rgb(62, 94, 33);
@@ -34,6 +48,7 @@ footer {
   font-size: 20px;
   font-family: cursive;
   text-align: center;
+  margin-top: 80px;
 }
 footer .socialMedia {
   width: 100px;
@@ -60,14 +75,20 @@ footer .socialMedia {
   font-size: 30px -10px;
 }
 
+.bottonText {
+  font-family: cambria;
+  font-size: 30px;
+}
+
 body {
   background-image: linear-gradient(to left, #0b090a, #111d13);
 }
 
 .carousel {
   display: flex;
-  width: 80%;
+  width: 65%;
   justify-content: center;
+  margin: auto;
 }
 
 .video {
@@ -95,6 +116,8 @@ a {
   justify-content: center;
   width: 300px;
   height: 500px;
+  margin: auto;
+  background-color: rgba(241, 236, 236, 0.973);
 }
 
 /*titles*/
@@ -139,11 +162,13 @@ a {
 }
 
 .newSubtitles {
+  text-transform: uppercase;
+  text-align: center;
   color: rgb(38, 49, 41);
   font-family: cambria;
   font-weight: bold;
   font-size: 30px;
-  text-transform: uppercase;
+  text-transform: initial;
   text-align: center;
 }
 
@@ -154,6 +179,7 @@ a {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
+  text-align: justify;
 }
 
 /*CARDS IN PRODUCTS*/
@@ -184,6 +210,14 @@ a {
   justify-content: center;
   letter-spacing: 3px;
   margin: auto;
+}
+.productCards .bottonProduct {
+  background-color: rgb(31, 77, 31);
+  display: flex;
+  justify-content: center;
+  font-family: cambria;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 /*accordion in FAQ*/

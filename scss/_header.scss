@@ -1,6 +1,6 @@
 header{
     nav{
-        background-color: aliceblue;
+        background-color: #ecf39e;
 
         .mrC{ 
             text-decoration: none;
@@ -36,3 +36,18 @@ header{
         
     }
 }
+.cart{
+                    width: 30px;
+                    height: 40px;
+                    display: flex;
+                    justify-content: right;
+                    color: black;
+                    &:hover{
+                        color: rgb(189, 180, 118);
+                transition: all 0.7s;
+                width: 33px;
+                height: 43px;
+                
+                    }
+                    
+                }
