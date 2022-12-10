@@ -39,7 +39,7 @@ header nav li .titlesNav:hover {
 }
 
 footer {
-  background-color: #ecf39e;
+  background-color: whitesmoke;
   height: auto;
   width: auto;
   color: rgb(62, 94, 33);
@@ -86,9 +86,8 @@ body {
 
 .carousel {
   display: flex;
-  width: 65%;
+  width: 100%;
   justify-content: center;
-  margin: auto;
 }
 
 .video {
